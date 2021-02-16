@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+:root{
+    --lg-font-family: Spartan, sans-serif;
+    --bg: red;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var( --lg-font-family);
+}
+body>div {
+    width:1440px;
+    height: 800px;
+}
+body>div>div{
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto auto;
+    grid-template-columns:175px 175px 175px 175px 175px 175px 175px 175px;
+}
+#item-1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+#item-1>h1{
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-top: 120px;
+    margin-right: -75px;
+    line-height: 1em;
+}
+#item-1>p{
+    font-size: 80%;
+    color: hsl(303, 10%, 53%);
+
+
+}
+#item-2{
+    grid-column: 5/8;
+    grid-row: 1/2;
+    padding-top: 120px;
+}
+#item-2 > div {
+    background: hsl(300, 24%, 96%);
+    padding:10px 20px ;
+    border-radius: 8px;
+    font-weight: 500;
+    width: fit-content;
+
+    /* align-self: flex-s; */
+}
+#item-2 > div{margin-bottom:12px}
+#item-2> div>span{
+    margin-left: 20px;
+    color: hsl(300, 43%, 22%);
+    
+}
+#item-2> div:nth-child(1){
+    align-self: flex-start;
+}
+
+#item-2> div:nth-child(2){
+    /* align-self: center; */
+    margin:auto;    margin-bottom:12px;
+
+}
+
+#item-2> div:nth-child(3){
+    margin-right:0px;
+    margin-left: auto;    
+
+}
+#item-3{
+    grid-column: 2/8;
+    grid-row: 2/3;
+    margin-top: -75px;
+    margin-bottom: 50px;
+    display: flex;
+    column-gap: 30px;
+
+}
+#item-3>div{ padding: 30px 25px; border-radius: 8px;     background: hsl(300, 43%, 22%);color: white;
+flex-grow: 1;
+height: fit-content;
+}
+#item-3>div >img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+#item-3>div >h4{
+    margin-left: 30px;
+}
+#item-3>div >h4+p{
+    margin: 0px;
+    margin-top: -20px;
+    color:hsl(333, 80%, 67%);
+}
+#item-3>div >p+p{
+font-size: 80%;}
