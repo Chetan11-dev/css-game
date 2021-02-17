@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+:root{
+    --lg-font-family: Karla, sans-serif;
+    --bg: red;
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-cyan-lighter:  	hsl(179, 47%, 52%);
+    --color-bright-yellow: hsl(71, 73%, 54%);
+    --color-light-grey: hsl(204, 43%, 93%);
+    --color-greyish-blue: hsl(218, 22%, 67%); 
+  
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var( --lg-font-family);
+    background-color: var(--color-light-grey);
+
+
+}
+body>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color:white;
+}
+a{
+    color:white;
+
+}
+
+body>div>div{
+    box-shadow: 0 5px 15px rgb(1 1 1 / 20%);
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto auto;
+    border-radius: 80px;
+    width: 35rem;
+    border-collapse: separate; 
+
+}
+body>div>div>div{
+    padding: 20px;;
+}
+#item-1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: white;
+
+}
+
+#item-1>h3{
+    color: var(--color-cyan-lighter);
+
+}
+
+#item-1>h4{
+color: var(--color-bright-yellow);
+
+}
+
+#item-1>p{
+    font-size: 80%;
+    color: hsl(303, 10%, 53%);
+}
+#item-2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:var(--color-cyan) ;
+
+}
+#item-2 > h4{font-weight: 400; margin: 0px;
+    margin-bottom: 10px;}
+
+#item-2 > h5{
+    font-size: 30px;
+    margin: 0px;
+
+    margin-bottom: 10px;
+}
+#item-2 > p{
+    margin: 0px;
+    margin-bottom: 35px;
+
+}
+#item-2 > h5>span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#item-2 > a{
+    /* margin-right: 20px; */
+    padding: 12px 0px;
+width: 100%;
+font-size: 12px;
+border-radius: 4px;
+text-align: center;
+display: block;
+    background-color: var(--color-bright-yellow);
+}
+#item-3{
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: flex;
+    column-gap: 30px;
+    background-color:var(--color-cyan-lighter) ;
+
+}
+#item-3 h4,#item-3 p{
+    margin: 0px;
+    font-size: 80%;
+
+}
+#item-3  h4 + p {
+    margin-top: 15px;
+}
