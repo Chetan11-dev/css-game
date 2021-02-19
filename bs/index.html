@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        .card {
+            height: 250px;
+        }
+
+        .g-1 {
+            grid-template-columns: 1fr;
+        }
+
+
+        @media (min-width: 768px) {
+
+
+            .g-md-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+        }
+
+        @media (min-width: 992px) {
+
+            .g-lg-4 {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="text-center">Flexbox</h1>
+    <div class="row">
+        <div class="card  col-lg-3 col-md-6 col-12"></div>
+        <div class="card  col-lg-3 col-md-6 col-12"></div>
+        <div class="card  col-lg-3 col-md-6 col-12"></div>
+        <div class="card  col-lg-3 col-md-6 col-12"></div>
+    </div>
+
+    <h1 class="text-center">Grid</h1>
+    
+    <div style="display: grid;" class=" g-lg-4 g-md-2 g-1 ">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+</body>
+
