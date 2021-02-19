@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .rem {
+      background-color: red;
+
+      width: 5rem;
+      height: 100px;
+    }
+
+    .em {
+      background-color: red;
+      width: 5rem;
+      height: 100px;
+    }
+
+    .container {
+      margin: auto;
+      margin-top: 100px;
+      width: fit-content;
+    }
+
+    .top {
+      margin: auto;
+      text-align: center;
+    }
+
+    .bottom {
+      margin: auto;
+      width: fit-content;
+
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      align-items: center;
+    }
+
+    .bottom>div {
+      height: fit-content;
+      flex-grow: 1;
+    }
+
+    .two-card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    .card {
+      height: 14em;
+      width: 15em;
+      box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+      border-radius: 8px;
+      padding: 16px;
+      border-top: 3px solid blue;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-15px);
+    }
+
+    .card>img {
+      margin-top: 50px;
+      display: block;
+      margin-left: auto;
+    }
+
+    p {
+      color: hsl(229, 6%, 66%);
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div style="margin-top: 25px;width: 5rem; height: 100px; background-color: red;" class="em">
+    
+  </div><div style="margin-top: 25px;width: 5em; height: 100px; background-color: red;" class="em">
+    
+  </div>
+  <div class="container">
+
+    <div class="top">
+      <h2 style="font-weight: lighter;"> Reliable, efficient delivery
+      </h2>
+      <h2> Powered by Technology
+      </h2>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
+
+    </div>
+
+    <div class="bottom">
+      <div class="card">
+        <h4> Supervisor
+        </h4>
+        <p> Monitors activity to identify project roadblocks.
+        </p>
+        <img src="./images/icon-supervisor.svg" alt="glass" />
+      </div>
+      <div class="two-card">
+        <div class="card">
+          <h5> Team Builder
+
+          </h5>
+          <p>Scans our talent network to create the optimal team for your project.
+
+          </p>
+          <img src="./images/icon-team-builder.svg" alt="glass" />
+        </div>
+        <div class="card">
+          <h5> Karma
+          </h5>
+          <p>Regularly evaluates our talent to ensure quality.
+
+          </p>
+          <img src="./images/icon-karma.svg" alt="glass" />
+        </div>
+      </div>
+      <div class="card">
+        <h5> Calculator
+        </h5>
+        <p>Uses data from past projects to provide better delivery estimates.
+
+        </p>
+        <img src="./images/icon-calculator.svg" alt="glass" />
+      </div>
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
